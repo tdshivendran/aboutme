@@ -75,8 +75,8 @@ main>div {
 }
 
 #SocialIcon{
-  padding-right: 1rem;
   padding-top: .2rem;
+  padding-right: 1rem;
   font-size: 3rem;
 }
 
@@ -184,5 +184,43 @@ em {
   margin: 1rem 1rem 1rem 0;
   padding: 0;
   max-width: 30rem;
+}
 
+.rw-words{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-indent: 0;
+  min-width: 35rem;
+  padding-top: .75rem;
+  padding-bottom: .2rem;
+}
+
+.rw-words span{
+  padding: 0 1rem 0 1rem;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  color: crimson;
+}
+
+.rw-words-1 span{
+  animation: rotateWordsFirst 12s linear infinite 0s;
+}
+.rw-words span:nth-child(2) {
+  animation-delay: 4s;
+}
+.rw-words span:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes rotateWordsFirst {
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateY(-50px); }
+  10% { opacity: 1; -webkit-transform: translateY(0px); }
+  25% { opacity: 1; -webkit-transform: translateY(0px); }
+  30% { opacity: 0; -webkit-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
