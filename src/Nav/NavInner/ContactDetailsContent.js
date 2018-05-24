@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ContactDetailsContent=[
-    <div class="innerContent">
+    <div class="innerContent" id="Contact">
         <h2>Contact</h2>
         <p>If you have any questions or want to know more about the applications that I’ve built, please send me an email.</p>
         <p><span class="boldText">E-mail: </span>tdshivendran@gmail.com</p>

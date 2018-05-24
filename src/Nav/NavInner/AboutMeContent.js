@@ -19,7 +19,7 @@ const AboutMeContent = [
             Also, I worked on project that uses prediction techniques to find faults in highly critical process.
         </p>
         <p>
-            To me software development is providing that not only simulating a real-world process but also provide tools to automate stuff and make it easier for people to accomplish their tasks.
+            To me software development is not only simulating a real-world process but also provide tools to automate stuff and make it easier for people to accomplish their tasks.
             As an Developer, I enjoyed working on building tools that automated complex manual tasks that took weeks to perform, to be done in hours thus saving time and effort.
         </p>
         <p>

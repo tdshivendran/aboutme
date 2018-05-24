@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import TitleSubtitle from './Title/TitleSubtitle';
-import NavContent from './Nav/NavContent';
+import MainPage from './MainPage';
 
 const display = [
-    <main class="content">
+    <div>
         <div>
-            <div>
-                <TitleSubtitle/>
-                <NavContent/>
-            </div>
+            <MainPage/>
         </div>
-    </main>
+    </div>
+
 ];
 
 class App extends Component {
