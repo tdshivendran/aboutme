@@ -4,27 +4,26 @@ const AboutMeContent = [
     <div class="innerContent" id="AboutMe">
         <h2>About Me</h2>
         <p>
-            Since my early age, I've been curious about how things worked.
-            This led me to the joy of dismantle things and analyze to see how they functioned.
-            Although I don’t dismantle things needlessly nowadays, I find myself enjoying learning and understanding new things.
+            A passionate software developer, specializing in building JavaScript-based front-end applications, as well as developing python based back-end web applications.
+            I enjoy building custom tools and applications because I learn and improve my skills on the go.
         </p>
         <p>
-            " <em>The joy of learning and challenging myself to be a better me</em> " has been my motto since my childhood.
+            " <em>The joy of learning and the challenge to be a better version of myself</em> " has been my drive since my childhood.
         </p>
-        <h2>Education and Experience</h2>
+        <h2>My Story</h2>
         <p>
-            My undergrad in Electronics and Instrumentation Engineering has explored me to understand things in a more comprehensive manner.
-            Automation being a major part, I started to learn and build software tools to automate stuff.
-            Here is where I built my first bot that performed few simple tasks.
-            Also, I worked on project that uses prediction techniques to find faults in highly critical process.
-        </p>
-        <p>
-            To me software development is not only simulating a real-world process but also provide tools to automate stuff and make it easier for people to accomplish their tasks.
-            As an Developer, I enjoyed working on building tools that automated complex manual tasks that took weeks to perform, to be done in hours thus saving time and effort.
+            Since my early age, I appreciated the joy of discovery.
+            Curiosity drove me into finding answers about how things worked.
+            It helped me to dismantle things apart to see how they worked.
+            I also began fixing stuff and building small things with what I can find.
         </p>
         <p>
-            During my Master’s in computers and Information Systems Security, I learnt to write secure and efficient code and explore concepts in networking and security.
-            I have worked on setting up secure routers and developing secure applications.
+            Although I don’t find myself tinkering unnecessarily nowadays, I relish the process of creating, maintaining and enhancing, not just for the benefit of myself but also for the best of others.
+            Software development gives me the opportunity to provide people with easy to use tools and effortlessly accomplish their tasks.
+        </p>
+        <p>
+            I enjoy programming because the journey towards a finished product entices me the most.
+            The challenges along the journey give me the opportunities to learn and enrich myself while creating something of value.
         </p>
     </div>
 ];

@@ -7,6 +7,7 @@ const DjangoReact=[
                 <h5 class="card-title boldText">Django-react</h5>
                 <h6 class="card-subtitle mb-2 text-muted">https://github.com/tdshivendran/django_react</h6>
                 <p class="card-text">A sample Django web application that serves as a guide to integrate Django with ReactJS.</p>
+                <footer class="text-muted">Python/Django, HTML, React JS</footer>
             </div>
         </div>
     </a>
@@ -19,7 +20,8 @@ const Snort=[
             <div class="card-body">
                 <h5 class="card-title boldText">Snort IDPS</h5>
                 <h6 class="card-subtitle mb-2 text-muted">https://tdshivendran.github.io/Snort-IDPS/</h6>
-                <p class="card-text">A secure IDPS system that detects and prevents and logs any unusual activity on a network.</p>
+                <p class="card-text">A secure network router built on Linux, facilitating secure communications and detects, prevents and logs any unusual activity on the network.</p>
+                <footer class="text-muted">Snort, TCP/IP, UDP, Secure Networking</footer>
             </div>
         </div>
     </a>
@@ -31,7 +33,8 @@ const Homepage=[
             <div class="card-body">
                 <h5 class="card-title boldText">Homepage</h5>
                 <h6 class="card-subtitle mb-2 text-muted">https://tdshivendran.github.io/Homepage/</h6>
-                <p class="card-text">A sample webpage designed using ReactJS, HTML and CSS that helps in increasing the productivity of users</p>
+                <p class="card-text">A simple new-tab dashboard page featuring quotes, todo, and calendar, aimed to increase the productivity of the users. Built with HTML, CSS and React JS.</p>
+                <footer class="text-muted">React JS, HTML, CSS</footer>
             </div>
         </div>
     </a>
@@ -44,6 +47,7 @@ const AnonymousChat=[
                 <h5 class="card-title boldText">Anonymous Chat</h5>
                 <h6 class="card-subtitle mb-2 text-muted">https://github.com/tdshivendran/anonymous_chat</h6>
                 <p class="card-text">A secure chat application server that facilitates anonymous and secure messages transactions.</p>
+                <footer class="text-muted">Java, JSP, Security protocols, Networking</footer>
             </div>
         </div>
     </a>
@@ -56,6 +60,7 @@ const faultPrediction=[
                 <h5 class="card-title boldText">Fault Prediction</h5>
                 <h6 class="card-subtitle mb-2 text-muted">https://www.scopus.com/inward/record.uri?eid=2-s2.0-84942617553&partnerID=40&md5=e6d1c7848c44bd4fbc2ea71b4a4350c8</h6>
                 <p class="card-text">A prediction based fault detection algorithm that can detect and isolate faults for highly critical processes.</p>
+                <footer class="text-muted">Prediction algorithms, MATLAB</footer>
             </div>
         </div>
     </a>
@@ -66,15 +71,15 @@ const projectCards=[
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                {DjangoReact}
+                {Homepage}
             </div>
             <div class="col-md-6">
-                {Snort}
+                {DjangoReact}
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                {Homepage}
+                {Snort}
             </div>
             <div class="col-md-6">
                 {AnonymousChat}
