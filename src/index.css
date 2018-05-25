@@ -1,3 +1,16 @@
+#slice-bg {
+    position:fixed;
+    width:100%;
+    height:calc(100% + 100px);
+    min-height:100%;
+    top:0;
+    left:0;
+    background:linear-gradient(65deg,#f8f8f8 28%,#fff 0);
+    z-index:-1;
+    transition:height .8s
+}
+
+
 #NavInner {
     padding-top: 4rem;
 }
@@ -12,7 +25,6 @@ p {
     font-size: 1.2rem;
 }
 .Hero-title {
-    font-family: 'Nunito', sans-serif;
     display: inline;
     font-size: 6rem;
     line-height: 95%;
@@ -24,6 +36,7 @@ p {
 }
 
 #name {
+    font-family: 'Nunito', sans-serif;
     color: crimson;
     font-weight:bold;
 }
@@ -64,6 +77,11 @@ a{
 }
 
 a:hover, a:active{
+    color: crimson;
+    text-decoration:none;
+}
+
+#Nav-link:hover, #Nav-link:active{
     color: crimson;
     text-decoration:none;
 }

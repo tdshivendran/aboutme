@@ -5,6 +5,7 @@ import AboutMeContent from "./Nav/NavInner/AboutMeContent";
 import ExperienceContent from "./Nav/NavInner/ExperienceContent";
 import ContactDetailsContent from "./Nav/NavInner/ContactDetailsContent";
 
+
 class MainPage extends React.Component {
     constructor(props){
         super(props);
@@ -43,23 +44,23 @@ class MainPage extends React.Component {
             displaynav: [
                 <div>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" onClick={this.handleClickHome} href="#Home">Shivendran Tiruchanpalli</a>
+                        <a class="navbar-brand" id="Nav-link" onClick={this.handleClickHome} href="#Home">Shivendran Tiruchanpalli</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link" onClick={this.handleClickAboutMe} href="#AboutMe">About Me</a>
+                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickAboutMe} href="#AboutMe">About Me</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" onClick={this.handleClickSkills} href="#Skills">Skills</a>
+                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickSkills} href="#Skills">Skills</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" onClick={this.handleClickExprience} href="#Projects">Projects</a>
+                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickExprience} href="#Projects">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" onClick={this.handleClickContact} href="#Contact">Contact</a>
+                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickContact} href="#Contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -115,14 +116,17 @@ class MainPage extends React.Component {
         this.setState({displaybody:this.state.display});
     }
 
+
     render(){
         return(
             <div>
+                <div id="slice-bg" style={{height: '1126px'}}></div>
                 {this.state.displayhead}
                 <div class="container">
                     {this.state.displaybody}
                 </div>
             </div>
+
         );
     }
 }
