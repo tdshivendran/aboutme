@@ -2,7 +2,7 @@
   "name": "aboutme",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://tdshivendran.github.io/aboutme",
+  "homepage": "https://tdshivendran.github.io/aboutme",
   "dependencies": {
     "env2": "^2.2.0",
     "prop-types": "^15.6.1",

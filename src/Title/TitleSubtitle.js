@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TypeWriter from '../TypeWriter';
 
 class TitleSubtitle extends React.Component {
@@ -13,10 +13,10 @@ class TitleSubtitle extends React.Component {
                 </h1>
                 <div class="Hero-bottomWrapper">
                     <h2 class="Hero-subTitle">
-                        A software developer.
+                        A web developer.
                         <span id="IconsWrap">
-                            <a id="Icon" href="https://github.com/tdshivendran" target="_blank"><span class="fa fa-github"> </span></a>
-                            <a id="Icon" href="https://www.linkedin.com/in/tdshivendran/" target="_blank"><span class="fa fa-linkedin-square"> </span></a>
+                            <a id="Icon" href="https://github.com/tdshivendran" target="_blank" rel="noopener noreferrer"><span class="fa fa-github"> </span></a>
+                            <a id="Icon" href="https://www.linkedin.com/in/tdshivendran/" target="_blank" rel="noopener noreferrer"><span class="fa fa-linkedin-square"> </span></a>
                         </span>
                     </h2>
                 </div>

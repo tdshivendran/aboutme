@@ -1,11 +1,10 @@
 import React from 'react';
 
 const AboutMeContent = [
-    <div class="innerContent" id="AboutMe">
+    <div class="innerContent">
         <h2>About Me</h2>
         <p>
-            A passionate software developer, specializing in building JavaScript-based front-end applications, as well as developing python based back-end web applications.
-            I enjoy building custom tools and applications because I learn and improve my skills on the go.
+            A passionate web developer, specializing in building JavaScript-based front-end applications, as well as developing python based back-end web applications.
         </p>
         <p>
             " <em>The joy of learning and the challenge to be a better version of myself</em> " has been my drive since my childhood.

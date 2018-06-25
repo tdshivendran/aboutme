@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TypeIt from 'typeit';
 
 class TypeWriter extends React.Component {
     constructor (props) {
         super(props);
+        this.componentDidMount=this.componentDidMount.bind(this);
     }
 
     componentDidMount () {

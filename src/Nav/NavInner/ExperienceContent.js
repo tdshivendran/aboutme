@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DjangoReact=[
-    <a href="https://github.com/tdshivendran/django_react" target="_blank">
+    <a href="https://github.com/tdshivendran/django_react" target="_blank" rel="noopener noreferrer">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title boldText">Django-react</h5>
@@ -15,7 +15,7 @@ const DjangoReact=[
 ];
 
 const Snort=[
-    <a href="https://tdshivendran.github.io/Snort-IDPS/" target="_blank">
+    <a href="https://tdshivendran.github.io/Snort-IDPS/" target="_blank" rel="noopener noreferrer">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title boldText">Snort IDPS</h5>
@@ -28,7 +28,7 @@ const Snort=[
 ];
 
 const Homepage=[
-    <a href="https://tdshivendran.github.io/Homepage/" target="_blank">
+    <a href="https://tdshivendran.github.io/Homepage/" target="_blank" rel="noopener noreferrer">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title boldText">Homepage</h5>
@@ -41,7 +41,7 @@ const Homepage=[
 ];
 
 const AnonymousChat=[
-    <a href="https://github.com/tdshivendran/anonymous_chat" target="_blank">
+    <a href="https://github.com/tdshivendran/anonymous_chat" target="_blank" rel="noopener noreferrer">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title boldText">Anonymous Chat</h5>
@@ -54,7 +54,7 @@ const AnonymousChat=[
 ];
 
 const faultPrediction=[
-    <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84942617553&partnerID=40&md5=e6d1c7848c44bd4fbc2ea71b4a4350c8" target="_blank">
+    <a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84942617553&partnerID=40&md5=e6d1c7848c44bd4fbc2ea71b4a4350c8" target="_blank" rel="noopener noreferrer">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title boldText">Fault Prediction</h5>
@@ -68,27 +68,21 @@ const faultPrediction=[
 ];
 
 const projectCards=[
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                {Homepage}
-            </div>
-            <div class="col-md-6">
-                {DjangoReact}
-            </div>
+    <div class="cardWrap">
+        <div class="cardContent">
+            {Homepage}
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                {Snort}
-            </div>
-            <div class="col-md-6">
-                {AnonymousChat}
-            </div>
+        <div class="cardContent">
+            {DjangoReact}
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                {faultPrediction}
-            </div>
+        <div class="cardContent">
+            {Snort}
+        </div>
+        <div class="cardContent">
+            {AnonymousChat}
+        </div>
+        <div class="cardContent">
+            {faultPrediction}
         </div>
     </div>
 ];
@@ -100,7 +94,7 @@ const ExperienceContent =[
             On the side, I enjoy building tools, guides, and applications to enhance my skills and to make it easier for someone else.
             Here are a few projects that I have worked on.
         </p>
-        <div class="container">{projectCards}</div>
+        {projectCards}
     </div>
 ];
 

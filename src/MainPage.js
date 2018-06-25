@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TitleSubtitle from './Title/TitleSubtitle';
-import SkillsContent from "./Nav/NavInner/SkillsContent";
-import AboutMeContent from "./Nav/NavInner/AboutMeContent";
-import ExperienceContent from "./Nav/NavInner/ExperienceContent";
-import ContactDetailsContent from "./Nav/NavInner/ContactDetailsContent";
-
+import NavPage from "./NavPage";
 
 class MainPage extends React.Component {
     constructor(props){
@@ -13,13 +9,11 @@ class MainPage extends React.Component {
         this.handleClickContact = this.handleClickContact.bind(this);
         this.handleClickExprience = this.handleClickExprience.bind(this);
         this.handleClickSkills = this.handleClickSkills.bind(this);
-        this.handleClickHome = this.handleClickHome.bind(this);
         this.componentDidMount = this.componentDidMount.bind(this);
         this.state = {
-            displayhead: '',
             displaybody: '',
             display: [
-                <div id="MainPage">
+                <div id="MainPage" class="container">
                     <TitleSubtitle/>
                     <div class="Nav">
                         <ul class="Nav-list">
@@ -41,75 +35,24 @@ class MainPage extends React.Component {
                     </div>
                 </div>
             ],
-            displaynav: [
-                <div>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" id="Nav-link" onClick={this.handleClickHome} href="#Home">Shivendran Tiruchanpalli</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                                <li class="nav-item">
-                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickAboutMe} href="#AboutMe">About Me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickSkills} href="#Skills">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickExprience} href="#Projects">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="Nav-link" class="nav-link" onClick={this.handleClickContact} href="#Contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            ]
 
         };
     }
 
-    handleClickHome(){
-        this.setState({displayhead: ''});
-        this.setState({displaybody: this.state.display});
-    }
-
     handleClickAboutMe(){
-        this.setState({displayhead: this.state.displaynav});
-        this.setState({displaybody: [
-                <div id="NavInner">
-                    {AboutMeContent}
-                </div>
-            ]});
+        this.setState({displaybody: <NavPage display="aboutme"/>})
     }
 
     handleClickSkills(){
-        this.setState({displayhead: this.state.displaynav});
-        this.setState({displaybody: [
-                <div id="NavInner">
-                    {SkillsContent}
-                </div>
-            ]});
+        this.setState({displaybody: <NavPage display="skills"/>})
     }
 
     handleClickExprience(){
-        this.setState({displayhead: this.state.displaynav});
-        this.setState({displaybody: [
-                <div id="NavInner">
-                    {ExperienceContent}
-                </div>
-            ]});
+        this.setState({displaybody: <NavPage display="experience"/>})
     }
 
     handleClickContact(){
-        this.setState({displayhead: this.state.displaynav});
-        this.setState({displaybody: [
-            <div id="NavInner">
-                {ContactDetailsContent}
-            </div>
-            ]});
+        this.setState({displaybody: <NavPage display="contact"/>})
     }
 
     componentDidMount(){
@@ -121,8 +64,7 @@ class MainPage extends React.Component {
         return(
             <div>
                 <div id="slice-bg" style={{height: '1126px'}}></div>
-                {this.state.displayhead}
-                <div class="container">
+                <div>
                     {this.state.displaybody}
                 </div>
             </div>
