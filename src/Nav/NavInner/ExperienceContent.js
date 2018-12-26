@@ -67,8 +67,25 @@ const faultPrediction=[
 
 ];
 
+const HoloIntern=[
+    <a href="https://github.com/Holochain-Internship/mutual-rating" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title boldText">Mutual Ratings</h5>
+                <h6 class="card-subtitle mb-2 text-muted">https://github.com/Holochain-Internship/mutual-rating</h6>
+                <p class="card-text">Rating app built on distributed platform in which different users can rate mutually.</p>
+                <footer class="text-muted">Holochain, HTML, CSS, Javascript, React JS,</footer>
+            </div>
+        </div>
+    </a>
+
+];
+
 const projectCards=[
     <div class="cardWrap">
+        <div class="cardContent">
+            {HoloIntern}
+        </div>
         <div class="cardContent">
             {Homepage}
         </div>

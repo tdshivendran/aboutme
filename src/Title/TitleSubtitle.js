@@ -1,15 +1,21 @@
 import React from 'react';
-import TypeWriter from '../TypeWriter';
+import TypeIt from 'typeit';
 
 class TitleSubtitle extends React.Component {
+    componentDidMount(){
+        new TypeIt('.type-it', {
+            strings: ['<span class="name">Shivendran</span>','<span class="name">Tiruchanpalli</span>,'],
+            speed: 75,
+            lifeLike: false,
+            nextStringDelay: 0,
+            cursor: false,
+        })
+    }
     render(){
         return(
             <div>
                 <h1 class="Hero-title">I'M
-                    <TypeWriter
-                        strings='<span id="name">SHIVENDRAN TIRUCHANPALLI</span>,'
-                        speed={90}
-                    />
+                    <span class="type-it"></span>
                 </h1>
                 <div class="Hero-bottomWrapper">
                     <h2 class="Hero-subTitle">
@@ -26,4 +32,5 @@ class TitleSubtitle extends React.Component {
 }
 
 export default TitleSubtitle;
+
 

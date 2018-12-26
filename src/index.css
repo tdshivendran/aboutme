@@ -13,29 +13,31 @@
 
 #NavInner {
     padding-top: 4rem;
+
 }
 
 #MainPage {
-    padding-top: 20vh;
-    padding-left: 10vw;
+    position: absolute;
     text-transform: uppercase;
+    top: 45%;
+    left: 46%;
+    transform: translate(-46%,-45%);
+    -ms-transform: translate(-46%,-45%);
 }
 
 p {
     font-size: 1.2rem;
 }
 .Hero-title {
-    display: inline;
     font-size: 6rem;
     line-height: 95%;
-    max-width: 100%;
 }
 
 .Hero-bottomWrapper {
     padding-top: 0.5rem;
 }
 
-#name {
+.name {
     font-family: 'Nunito', sans-serif;
     color: crimson;
     font-weight:bold;
@@ -136,15 +138,33 @@ a:hover, a:active{
     margin: 1rem;
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    #MainPage {
-        padding-left: 1rem;
-    }
+@media (max-width: 323px) {
 
     .Hero-title {
-        font-size: 3rem;
-        max-width: 100%;
+        font-size: 2rem;
+    }
+
+    .Hero-subTitle {
+        font-size: 1.2rem;
+    }
+
+    .Nav-item {
+        padding-bottom: .5rem;
+        display: block;
+        font-size: 1rem;
+        font-family: Nunito,sans-serif;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media  (min-width: 324px) and (max-width: 575.98px) {
+
+    .Hero-title {
+        font-size: 2.8rem;
+    }
+
+    .Hero-subTitle {
+        font-size: 1.8rem;
     }
 
     .cardWrap {
@@ -162,13 +182,9 @@ a:hover, a:active{
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #MainPage {
-        padding-left: 0;
-    }
 
     .Hero-title {
         font-size: 3.7rem;
-        max-width: 100%;
     }
 
     .cardWrap {
@@ -186,13 +202,9 @@ a:hover, a:active{
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #MainPage {
-        padding-left: 0;
-    }
 
     .Hero-title {
         font-size: 4.5rem;
-        max-width: 100%;
     }
     .cardContent {
         width: 100%;
@@ -206,8 +218,22 @@ a:hover, a:active{
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     .Hero-title {
-        font-size: 5.5rem;
-        max-width: 100%;
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+
+    .Hero-title {
+        font-size: 5.8rem;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .Hero-title {
+        font-size: 7rem;
     }
 }
